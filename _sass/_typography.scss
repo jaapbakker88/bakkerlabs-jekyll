@@ -1,0 +1,20 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=9523de88-6889-4f1d-8add-851892e5bcd4");
+    @font-face{
+        font-family:"Bree W01_n4";
+        src:url("/assets/fonts/e0471457-1cff-4142-9da4-d58f7745fa25.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Bree";
+        src:url("/assets/fonts/e0471457-1cff-4142-9da4-d58f7745fa25.eot?#iefix");
+        src:url("/assets/fonts/e0471457-1cff-4142-9da4-d58f7745fa25.eot?#iefix") format("eot"),url("/assets/fonts/555c9da4-c031-43ae-80af-20e1c3288be5.woff2") format("woff2"),url("/assets/fonts/3054586a-adad-4da0-9edf-34a065517aec.woff") format("woff"),url("/assets/fonts/3edfe3ac-2714-402a-ab5c-a0c0839a2797.ttf") format("truetype"),url("/assets/fonts/6c7c3a52-c07e-42dd-9777-9f73f976182f.svg#6c7c3a52-c07e-42dd-9777-9f73f976182f") format("svg");
+font-weight: 400;
+font-style: normal;
+    }
+
+body {
+    font-family: system, -apple-system, '.SFNSDisplay-Regular', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bree', 'Helvetica', Arial, sans-serif;
+}
