@@ -8,4 +8,20 @@ layout: default
   
   {{ content }}
 
+	<div class="row article_list">
+      {% for post in site.posts limit:4 %}
+        <div class="col-md-3 article_list--single">
+          <div class="post">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+            <h2>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h2>
+            <p>{% if post.exerpt %}{{ post.exerpt }}{% else %}{{ post.content | strip_html | truncatewords: 25 }}{% endif%}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
 </div>
