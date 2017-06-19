@@ -1,0 +1,15 @@
+$background: #f8f8ff;
+$dark: lighten(black, 19%);
+$primary-brand: #715CAB;
+
+body {
+	background: $background;
+	color: $dark;
+}
+
+a {
+	color: $primary-brand;
+	&:hover {
+		color: lighten($primary-brand, 19%);
+	}
+}

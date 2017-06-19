@@ -2,24 +2,26 @@
 layout: default
 ---
 
-<div class="home container">
+<div class="blog container-fluid">
 
   <h1 class="page-heading">Posts</h1>
   
   {{ content }}
+    <div class="row article_list">
+      {% for post in site.posts %}
+        <div class="col-md-3 article_list--single">
+          <div class="post">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+            <h2>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h2>
+            <p>{% if post.exerpt %}{{ post.exerpt }}{% else %}{{ post.content | strip_html | truncatewords: 25 }}{% endif%}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
