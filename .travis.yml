@@ -4,3 +4,9 @@ rvm:
 install: gem install s3_website && bundle
 script: jekyll build
 after_success: s3_website push
+
+# safelist
+branches:
+  only:
+  - master
+  - stable
