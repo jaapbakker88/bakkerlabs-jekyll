@@ -11,6 +11,6 @@ I have been intrigued by JavaScript and it's not so sudden revival. For the past
 
 So, as of today we're going to start teaching myself in JavaScript and Node.js - the actual system this blog is running on.
 
-![](/img/javascript-books.jpg)
+![](/assets/img/javascript-books.jpg)
 
 So I bought three books today. The first one I already started reading in, but an online book is not the same as an actual physical book. And two books to start on after I finish the first one. I'm having a clear vision on where to go now. Sometimes this happens suddenly. A moment or a couple of moments where everything comes together and you see everything a little clearer. 

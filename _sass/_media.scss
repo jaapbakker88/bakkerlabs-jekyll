@@ -8,6 +8,29 @@
 			
 		}
 	}
+	.post-single {
+		width: 40em;
+		margin: 0 auto;
+		img {
+			width: 50em;
+			padding: 0.8em;
+			border: 1px solid darken($background, 3%);
+			background: $background;
+			transform: translateX(-5.8em);
+
+		}
+		blockquote {
+			width: 45em;
+			padding: 0.8em;
+			border: 1px solid darken($background, 3%);
+			background: $background;
+			transform: translateX(-5.8em);
+			p {
+				font-size: 22px; 
+				font-family: $brand-font;
+			}
+		}
+	}
 }
 
 

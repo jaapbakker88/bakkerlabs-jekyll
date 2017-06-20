@@ -12,7 +12,7 @@ This little plugin helps you a great lot when you need to share your design with
 
 [LINK](http://marcosvid.al/sketch-notebook/) - $7.99
 
-![](/img/event-cropped.png)
+![](/assets/img/event-cropped.png)
 
 ### Craft by InVision LABS
 Craft makes working with Sketch and InVision much better. The ability to sync your designs directly to the InVision prototype saves me a ton of work and makes managing the multiple screens so much easier. There's also auto duplication based a grid, document and universal text and design styles and a [Pexels](pexels.com) integration for automatic downloading files. Can't live without this one anymore! 
@@ -24,7 +24,7 @@ Need dummy text? This simple plugins get the popular [Lipsum](lipsum.com) and fe
 
 [LINK](https://github.com/brandonbeecroft/Lorem-Ipsum-Plugin-for-Sketch) - Free
 
-![](/img/BTsiw11QqS.gif)
+![](/assets/img/BTsiw11QqS.gif)
 
 ### Icon Font
 Get icons from FontAwesome and other icon fonts directly from within Sketch. No more looking for the right vector icon. They are all within clicking distance all the time. 

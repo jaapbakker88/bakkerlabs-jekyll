@@ -1,6 +1,6 @@
 header {
 	
-	&.blog {
+	&.blog, &.post {
 		min-height: 40vh;
 		.container {height: 40vh; position: relative;}
 	}
@@ -79,6 +79,18 @@ header {
 	}
 	&:nth-child(4n), &:last-child {
 		border: none;
+	}
+}
+
+.post-single {
+	padding: 0.8em;
+	border-right: 1px solid darken($background, 3%);
+	border-left: 1px solid darken($background, 3%);
+	hr {
+		border: 0;
+		border-bottom: 1px solid darken($background, 3%);
+		width: 41.6em;
+		transform: translateX(-0.8em);
 	}
 }
 
