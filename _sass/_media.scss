@@ -1,0 +1,22 @@
+/* Small screen and up */
+@media (min-width: 768px) {
+	header {
+		h1	{
+			-webkit-clip-path: polygon(5% 0%, 100% 0, 100% 95%, 10% 100%);
+			clip-path: polygon(5% 0%, 100% 0, 100% 95%, 10% 100%);
+			// padding-left: 5em;
+			
+		}
+	}
+}
+
+
+/* Medium screen and up */
+@media (min-width: 992px) {
+
+}
+
+/* Large screen and up */
+@media (min-width: 1200px) {
+
+}

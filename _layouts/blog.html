@@ -1,28 +1,62 @@
 ---
 layout: default
+pagination:
+  enabled: false
 ---
 
 <div class="blog container-fluid">
-
-  <h1 class="page-heading">Posts</h1>
   
   {{ content }}
+  
+    {% if paginator.previous_page %}
+      {% if paginator.total_pages > 1 %}
+        <ul class="paginator">
+          {% if paginator.previous_page %}
+          <li>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&laquo; Newer</a>
+          </li>
+          {% endif %}
+          {% if paginator.next_page %}
+          <li>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Older &raquo;</a>
+          </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+    {% endif %}
+
     <div class="row article_list">
       {% for post in site.posts %}
-        <div class="col-md-3 article_list--single">
+        <div class="col-md-3 col-sm-6 article_list--single">
           <div class="post">
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-            <h2>
+            <h3>
               <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h2>
+            </h3>
             <p>{% if post.exerpt %}{{ post.exerpt }}{% else %}{{ post.content | strip_html | truncatewords: 25 }}{% endif%}</p>
+            <p class="read-more-link"><a class="post-link" href="{{ post.url | relative_url }}">Read More &raquo;</a></p>
           </div>
         </div>
       {% endfor %}
     </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {% if paginator.total_pages > 1 %}
+      <ul class="paginator">
+        {% if paginator.previous_page %}
+        <li>
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&laquo; Newer</a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li>
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Older &raquo;</a>
+        </li>
+        {% endif %}
+      </ul>
+    {% endif %}
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
 
 </div>
