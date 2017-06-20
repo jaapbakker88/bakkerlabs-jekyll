@@ -2,14 +2,14 @@
 	<div class="container">
 		{% assign default_paths = site.pages | map: "path" %}
 	    {% assign page_paths = site.header_pages | default: default_paths %}
-	    <h1><a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+	    <h1 style="display: flex; align-items: center; justify-content: center;"><a class="site-title" href="{{ "/" | relative_url }}" style="margin-right: 1em">{{ site.title | escape }}</a>  <img src="/assets/img/logo_v.svg" alt="" style="width: 50px; height: 50px;"></h2></h1>
     	<nav class="menu">
     		<ul>
     			<li>test</li>
     		</ul>
     	</nav>
 	    <div class="inner">
-	    	<h2>{{page.headline}}</h2>	
+	    	<h2>{{page.headline}}	
 	    </div>
 	</div>
 </header>
