@@ -9,6 +9,6 @@ I'm working freelancer for 3 months now and still my website looks like nothing.
 
 I'm actually most happy with the font I'm using. Here it is:
 
-![The font I'm using: Avenir Next](/img/bakkerlabs-font.png)
+![The font I'm using: Avenir Next](/assets/img/bakkerlabs-font.png)
 
 And with this post, I'm releasing the sneak preview. I hope to develop this idea into the actual site over the next few weeks. **Let's get that pressure on!**

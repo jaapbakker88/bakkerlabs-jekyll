@@ -9,7 +9,7 @@ So as I was using a couple of the products in the list below I wanted to start a
  
 ---
 
-![Unofficial(but beautiful) Sketch logo](/img/sketch_symbol.png)
+![Unofficial(but beautiful) Sketch logo](/assets/img/sketch_symbol.png)
 
 ## Design
 Designing is a big part of my workday. From wireframing to mocking up to revising to more revising. It is a big part of my job, so there it goes:
@@ -28,7 +28,7 @@ Still using this old, steady beast. Loving it. Need some dummy text while design
 
 ---
 
-![Bootstrap logo](/img/Bootstrap.png)
+![Bootstrap logo](/assets/img/Bootstrap.png)
 
 ## Coding
 After design comes code. Usually I do this almost parallel to designing. Coming back to sketch to work out how things should look before going at it with the code. 
@@ -50,7 +50,7 @@ The basic terminal on OSX is pretty good, but iTerm2 brings so much functionalit
 
 ---
 
-![Toggl logo](/img/toggl-logo-light-withbackground.png)
+![Toggl logo](/assets/img/toggl-logo-light-withbackground.png)
 
 ## Freelancing
 As I am a freelancer I need software to do my accounting, invoicing, contracts, time tracking and, last but not least, email. I feel these couple of programs are the best I have come around. 
@@ -67,7 +67,7 @@ The boring, but important part of running a business. Invoicing feels very natur
 
 ---
 
-![Lapa.ninja logo](/img/lapa-ninja-landing-pages.jpg)
+![Lapa.ninja logo](/assets/img/lapa-ninja-landing-pages.jpg)
 
 ## Inspiration
 During those dull moments of not having work of being stuck in a difficult coding problem or just not knowing what to do with a client or maybe having a *designers block*, this is what you need. Inspiration...

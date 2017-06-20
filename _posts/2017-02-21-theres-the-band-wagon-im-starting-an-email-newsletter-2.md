@@ -13,6 +13,6 @@ So coming back to email, it has been around for a long time, hasn't changed much
 
 So, go ahead and [sign up](https://www.getrevue.co/profile/jaapbakker), while waiting for the first issue to be released. 
 
-[![Email](/img/Schermafbeelding-2017-02-21-om-12.07.37.png)](https://www.getrevue.co/profile/jaapbakker)
+[![Email](/assets/img/Schermafbeelding-2017-02-21-om-12.07.37.png)](https://www.getrevue.co/profile/jaapbakker)
 
 PS. I know I should have started this thing before I went to New York. Well, too late now. 
