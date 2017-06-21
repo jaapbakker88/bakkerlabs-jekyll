@@ -4,7 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: blog
 title: "Blog"
-headline: "Thoughts, stories and ideas."
+headline: "Thought experiments, storywriting and idea-generation."
 pagination: 
   enabled: true
 ---

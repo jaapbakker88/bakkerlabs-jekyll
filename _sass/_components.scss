@@ -86,15 +86,47 @@ header {
 	padding: 0.8em;
 	border-right: 1px solid darken($background, 3%);
 	border-left: 1px solid darken($background, 3%);
+	border-top: 1px solid darken($background, 3%);
+	border-bottom: 1px solid darken($background, 3%);
+	.post-title {
+		margin-bottom: 0;
+	}
+	.post-meta {
+		margin-top: 0.2em;
+		font-size: 0.8em;
+	}
 	hr {
 		border: 0;
 		border-bottom: 1px solid darken($background, 3%);
-		width: 41.6em;
-		transform: translateX(-0.8em);
+	}
+	.footnotes {
+		margin-top: 2em;
+		ol {
+			font-size: 0.8em;
+		}
+	}
+	sup {
+		font-size: 0.6em; 
 	}
 }
 
-.cta-newsletter {}
+body.post { 
+	form.cta-newsletter {
+		width: 40em;
+		height: 40px;
+		margin: 2em auto;
+		padding: 0.8em;
+		border: 1px solid darken($background, 3%);
+		input, button {
+			height: 45px;
+		}
+		input {
+		}
+		button {
+		    height:45px;
+		}
+	}
+}
 
 .paginator {
 	list-style: none;
@@ -113,4 +145,43 @@ footer {
 	margin-top: 4em !important;
 	padding-top: 4em;
 	border-top: 1px solid darken($background, 3%);
+	font-size: 0.9em;
+	.row {
+		margin: 0;
+    	padding: 0 1.5em;
+	}
+	ul {
+		li {
+			margin-top: 5px;
+		}
+		
+	}
+	.menu {
+		list-style: none;
+		padding: 0; margin: 0;
+		li:first-child{
+			padding-left: 0;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 0.8em;
+		}
+	}
+	.fa-ul {
+		margin-top: 0;
+		li:first-child{
+			margin-left: -25px;
+			padding-left: 0;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 0.8em;
+		}
+	}
+
+	a {
+		color: lighten($dark, 19%);
+		text-decoration: none;
+		&:hover {
+			color: $primary-brand;
+		}
+	}
 }

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The big side project: The Pilot Crowd"
-date:   2017-06-18 16:15:15 +0200
+date:   2017-06-20 16:15:15 +0200
 categories: design
 ---
 
