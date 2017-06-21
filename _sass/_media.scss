@@ -1,11 +1,10 @@
 /* Small screen and up */
 @media (min-width: 768px) {
 	header {
-		h1	{
+		h1, {
 			-webkit-clip-path: polygon(5% 0%, 100% 0, 100% 95%, 10% 100%);
 			clip-path: polygon(5% 0%, 100% 0, 100% 95%, 10% 100%);
 			// padding-left: 5em;
-			
 		}
 	}
 	.post-single {
@@ -33,6 +32,11 @@
 		hr {
 			width: 41.6em;
 			transform: translateX(-0.8em);
+		}
+	}
+	body.post {
+		form.cta-newsletter {
+			width: 40em;
 		}
 	}
 }
