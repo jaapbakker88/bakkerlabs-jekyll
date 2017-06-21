@@ -13,8 +13,8 @@ font-style: normal;
 
 $brand-font:  'Bree', 'Helvetica', Arial, sans-serif;
 
-body {
-    font-family: system, -apple-system, '.SFNSDisplay-Regular', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+html, body {
+    font-family: system, -apple-system, BlinkMacSystemFont, '.SFNSDisplay-Regular', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

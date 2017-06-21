@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "When all your friends don't really know what you're doing"
-date:   2017-06-16 16:15:15 +0200
+date:   2017-06-20 16:15:15 +0200
 categories: freelancing
 ---
 
