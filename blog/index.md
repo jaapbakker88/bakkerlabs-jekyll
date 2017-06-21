@@ -5,6 +5,7 @@
 layout: blog
 title: "Blog"
 headline: "Thought experiments, storywriting and idea-generation."
+order: 3
 pagination: 
   enabled: true
 ---

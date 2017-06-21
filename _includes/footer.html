@@ -1,51 +1,55 @@
-<footer class="container">
-  <div class="row">   
-    <div class="col-md-3">
-      <ul class="menu">
-        <li>Menu</li>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="">Contact</a></li>        
-      </ul>
-    </div>
-    <div class="col-md-3">
-      <ul class="social-media-list fa-ul">
-        <li>Social</li> 
-        {% if site.github_username %}
-          <li>
-            <a href="https://www.github.com/{{ site.github_username}}"><i class="fa-li fa fa-github"></i> Github</a>
-          </li>
-        {% endif %}
-        {% if site.facebook_username %}
-          <li>
-            <a href="https://www.facebook.com/{{ site.facebook_username}}"><i class="fa-li fa fa-facebook"></i> Facebook</a>
-          </li>
-        {% endif %}
-        {% if site.twitter_username %}
-          <li>
-            <a href="https://www.twitter.com/{{ site.twitter_username}}"><i class="fa-li fa fa-twitter"></i> Twitter</a>
-          </li>
-        {% endif %}
-        {% if site.instagram_username %}
-          <li>
-            <a href="https://www.instagram.com/{{ site.instagram_username}}"><i class="fa-li fa fa-instagram"></i> Instagram</a>
-          </li>
-        {% endif %}
-        {% if site.linkedin_username %}
-          <li>
-            <a href="https://www.linkedin.com/{{ site.linkedin_username}}"><i class="fa-li fa fa-linkedin"></i> LinkedIn</a>
-          </li>
-        {% endif %}
-      </ul>
-    </div> 
-    <div class="col-md-6">
-      <div class="map">
-        <p>{{ site.description | escape }}</p>
-        <p>Chamber of Commerce: 64875776</p>
-        <p>&copy; 2017 Bakker Labs.</p>
+<footer>
+  <div class="container">
+    <div class="row">   
+      <div class="col-md-3 col-xs-6">
+        <ul class="menu">
+          <li>Menu</li>
+          <li><a href="{{ site.url }}">Home</a></li>
+          {% assign sorted_pages = site.pages | sort:"order" %}
+          {% for item in sorted_pages %}
+            <li><a href="{{item.url}}">{{item.title}}</a></li>
+          {% endfor %}
+          <li><a href="{{ "sitemap.xml" | relative_url }}">Sitemap</a></li>       
+        </ul>
       </div>
-    </div>
-  </div>      
+      <div class="col-md-3 col-xs-6">
+        <ul class="social-media-list fa-ul">
+          <li>Social</li> 
+          {% if site.github_username %}
+            <li>
+              <a href="https://www.github.com/{{ site.github_username}}"><i class="fa-li fa fa-github"></i> Github</a>
+            </li>
+          {% endif %}
+          {% if site.facebook_username %}
+            <li>
+              <a href="https://www.facebook.com/{{ site.facebook_username}}"><i class="fa-li fa fa-facebook"></i> Facebook</a>
+            </li>
+          {% endif %}
+          {% if site.twitter_username %}
+            <li>
+              <a href="https://www.twitter.com/{{ site.twitter_username}}"><i class="fa-li fa fa-twitter"></i> Twitter</a>
+            </li>
+          {% endif %}
+          {% if site.instagram_username %}
+            <li>
+              <a href="https://www.instagram.com/{{ site.instagram_username}}"><i class="fa-li fa fa-instagram"></i> Instagram</a>
+            </li>
+          {% endif %}
+          {% if site.linkedin_username %}
+            <li>
+              <a href="https://www.linkedin.com/{{ site.linkedin_username}}"><i class="fa-li fa fa-linkedin"></i> LinkedIn</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div> 
+      <div class="col-md-6 col-xs-12">
+        <div class="map">
+          <p>{{ site.description | escape }}</p>
+          <p>Chamber of Commerce: 64875776</p>
+          <p>&copy; 2017 Bakker Labs.</p>
+        </div>
+      </div>
+      
+    </div>    
+  </div>  
 </footer>
