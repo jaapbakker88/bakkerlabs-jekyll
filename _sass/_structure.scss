@@ -2,3 +2,20 @@ html, body {
 	margin: 0; padding: 0;
 }
 .container {margin: 0 auto}
+.row {    width: 100%;
+    margin: 0;}
+
+ .hundred {
+ 	height: 100%; 
+ }
+
+
+div.home {
+	padding: 1em;
+	#contact {
+		width: 100%;
+		form {
+			min-width: 100%;
+		}
+	}	
+}

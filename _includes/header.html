@@ -1,15 +1,18 @@
 <header class="{{page.layout}}">
-	<div class="container">
-		{% assign default_paths = site.pages | map: "path" %}
-	    {% assign page_paths = site.header_pages | default: default_paths %}
-	    <h1 style="display: flex; align-items: center; justify-content: center;"><a class="site-title" href="{{ "/" | relative_url }}" style="margin-right: 1em">{{ site.title | escape }}</a>  <img src="/assets/img/logo_v.svg" alt="" style="width: 50px; height: 50px;"></h2></h1>
-    	<nav class="menu">
-    		<ul>
-    			<li>test</li>
-    		</ul>
-    	</nav>
-	    <div class="inner">
-	    	<h2>{{page.headline}}</h2>	
-	    </div>
+	<div class="container-fluid" style="padding:0;">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-8 col-xs-12">
+				{% assign default_paths = site.pages | map: "path" %}
+			    {% assign page_paths = site.header_pages | default: default_paths %}
+			    <p class="brand" style="display: flex; align-items: center; justify-content: center;"><a class="site-title" href="{{ "/" | relative_url }}" style="margin-right: 1em">{{ site.title | escape }}</a>  <img src="/assets/img/logo_v.svg" alt="" style="width: 50px; height: 50px;"></h2></h1>
+			</div>
+		</div>
+		<div class="row middle-md hundred">
+			<div class="col-md-12">
+			    <div class="inner">
+			    	<h1>{{page.headline}}</h1>	
+			    </div>
+			</div>
+		</div>
 	</div>
 </header>
