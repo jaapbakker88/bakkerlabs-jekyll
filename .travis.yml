@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.1
 install: gem install s3_website && bundle
-script: JEKYLL_ENV=production jekyll build
+script: JEKYLL_ENV=production jekyll build --baseurl https://bakkerlabs.nl
 after_success: s3_website push
 
 # safelist
