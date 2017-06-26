@@ -4,7 +4,7 @@
       <div class="col-md-3 col-xs-6">
         <ul class="menu">
           <li>Menu</li>
-          <li><a href="{{ site.url }}">Home</a></li>
+          <li><a href="{{ site.baseurl }}">Home</a></li>
           {% assign sorted_pages = site.pages | sort:"order" %}
           {% for item in sorted_pages %}
             <li><a href="{{item.url}}">{{item.title}}</a></li>

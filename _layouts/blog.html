@@ -33,10 +33,10 @@ pagination:
             <span class="post-meta">{{ post.date | date: date_format }}</span>
 
             <h3>
-              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title | escape }}</a>
             </h3>
             <p>{% if post.exerpt %}{{ post.exerpt }}{% else %}{{ post.content | strip_html | truncatewords: 25 }}{% endif%}</p>
-            <p class="read-more-link"><a class="post-link" href="{{ post.url | relative_url }}">Read More &raquo;</a></p>
+            <p class="read-more-link"><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">Read More &raquo;</a></p>
           </div>
         </div>
       {% endfor %}
