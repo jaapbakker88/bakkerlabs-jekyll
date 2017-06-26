@@ -3,25 +3,15 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Home</h1>
-  
-  {{ content }}
-
-	<div class="row article_list">
-      {% for post in site.posts limit:4 %}
-        <div class="col-md-3 col-sm-6 article_list--single">
-          <div class="post">
-            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-            <h2>
-              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h2>
-            <p>{% if post.exerpt %}{{ post.exerpt }}{% else %}{{ post.content | strip_html | truncatewords: 25 }}{% endif%}</p>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 col-xs-12">
+          <h1>Hi, you've reached Bakker Labs. You're a little bit early, but that's okay.</h1>
+          <p>We're completely ready for you, just the website isn't yet. We're working really hard trying to find some spare hours here and there to finish it. In the meantime, please check out the latest post on our blog: {% for item in site.posts limit:1%}<a href="{{item.url}}">{{item.title}}</a>{% endfor %}&#8230;</p>
         </div>
-      {% endfor %}
+        <div class="col-md-8 col-md-offset-2 col-xs-12">
+          {% include contactform.html %}
+        </div>
+      </div>
     </div>
-
 </div>

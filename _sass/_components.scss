@@ -1,20 +1,18 @@
 header {
 	
-	&.blog, &.post, &.page {
-		min-height: 40vh;
-		.container {height: 40vh; position: relative;}
-	}
-	h1 {
+	
+	.brand {
 		/* Rectangle: */
-		position: absolute;
-		top: 0; right: 0;
 		background-image: -webkit-linear-gradient(42deg, #8272AE 0%, #715CAB 100%),;
 		background-image: -o-linear-gradient(42deg, #8272AE 0%, #715CAB 100%),;
 		background-image: linear-gradient(132deg, #8272AE 0%, #715CAB 100%);
-		color: #fff;
+		font-family: $brand-font;
+		font-weight: 700;
+			a {color: #fff; text-decoration: none;}
 		padding: 1em 1em 1em 2em;
 		margin: 0;
 		text-align: center;
+		font-size: 32px;
 		display: inline-block;
 	}
 	.menu {
@@ -140,7 +138,6 @@ body.post {
 	    display: block;
 	    
 	    input, textarea {
-	      font: 18px Helvetica, Arial, sans-serif;
 	      background-color: transparent;
 	      border: 1px solid darken($background, 3%);
 	      box-sizing: border-box;
@@ -148,14 +145,14 @@ body.post {
 	      padding: 20px;
 	      width: 100%;
 	      margin-bottom: 20px;
-	      font-size: 18px;
+	      font-size: 16px;
 	      outline: none;
 	      transition: all 0.2s ease-in-out;
 	      
 	      &::placeholder {
 	        transition: all 0.2s ease-in-out;
 	        color: #999;
-	        font: 18px Helvetica, Arial, sans-serif;
+	        font: 16px;
 	      }
 	      
 	      &:focus, &.populated {
@@ -184,22 +181,29 @@ body.post {
 	    }
 	  }
 	  
-	  input[type="submit"] {
+	  button[type="submit"] {
 	    transition: all 0.2s ease-in-out;
 	    font: 18px Helvetica, Arial, sans-serif;
 	    border: none;
 	    background: $primary-brand;
 	    color: #fff;
 	    padding: 16px 40px;
-	    -webkit-clip-path: 	polygon(5% 0%, 100% 5%, 95% 95%, 10% 100%);
-		clip-path: 			polygon(5% 0%, 100% 5%, 95% 95%, 10% 100%);
 		cursor: pointer;
 		// padding-left: 5em;
-	    
+	    display: block;
+	    width: 100%;
 	    &:hover {
 	      background: lighten($primary-brand, 19%);
 	    }
 	  }
+	}
+}
+
+.alert {
+	border: 1px solid darken($background, 3%);
+	padding: 1em;
+	&.success {
+		color: green;
 	}
 }
 

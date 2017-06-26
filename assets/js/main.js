@@ -13,7 +13,7 @@ if (document.getElementById('contactform')) {
 	    if (xhr.readyState == 4 && xhr.status == 200) {
 	        //var json = JSON.parse(xhr.responseText);
 	        document.getElementById("contactform").reset();
-	        document.getElementById("contact").insertAdjacentHTML('afterbegin', '<div id="alert success">You\'re message has been sent!</div>');
+	        document.getElementById("contact").insertAdjacentHTML('afterbegin', '<div class="alert success">You\'re message has been sent!</div>');
 	    } 
 	   }
 	   var data = JSON.stringify({
@@ -23,4 +23,8 @@ if (document.getElementById('contactform')) {
 	   });
 	   xhr.send(data);
 	}
+}
+
+function enableSubmitButton(val){
+  document.getElementById('submitButton').disabled = false;
 }
