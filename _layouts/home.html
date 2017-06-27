@@ -6,7 +6,17 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 col-xs-12">
-          <h1>Hi, you've reached Bakker Labs. You're a little bit early, but that's okay.</h1>
+          <h1 style="font-size: 4em;">
+          <script language="JavaScript">
+            var myDate = new Date();
+            if ( myDate.getHours() < 12 ) { document.write("Good<br>morning,"); }
+            else if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) { document.write("Good<br>afternoon,"); }
+            else if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) { document.write("Good<br>evening,");
+            } else { document.write("Good<br>day,"); }
+          </script>
+          <noscript>Good&lt;br&gt;day,</noscript>
+        </h1>
+          <!-- <h1>Hi, you've reached Bakker Labs. You're a little bit early, but that's okay.</h1> -->
           <p>We're completely ready for you, just the website isn't yet. We're working really hard trying to find some spare hours here and there to finish it. In the meantime, please check out the latest post on our blog: {% for item in site.posts limit:1%}<a href="{{item.url}}">{{item.title}}</a>{% endfor %}&#8230;</p>
         </div>
         <div class="col-md-8 col-md-offset-2 col-xs-12">
