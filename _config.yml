@@ -26,7 +26,7 @@ facebook_username:  bakker.labs
 instagram_username:  jpbkkr
 # linkedin_username:  jaapbakker88
 
-permalink: /:collection/:title/
+permalink: /blog/:title/
 
 # Build settings
 markdown: kramdown
