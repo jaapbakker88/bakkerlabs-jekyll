@@ -1,16 +1,36 @@
 /* Small screen and up */
 @media (min-width: 768px) {
-	header {
-		.brand {
-			-webkit-clip-path: polygon(5% 0%, 100% 0, 100% 95%, 10% 100%);
-			clip-path: polygon(5% 0%, 100% 0, 100% 95%, 10% 100%);
-			// padding-left: 5em;
+
+	nav {
+		.navbar {
+			border-bottom: 1px solid darken($background, 3%);
+			padding: 0.5em 0 0.2em;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 		}
-	}
-	header {
-		&.blog, &.post, &.page, &.home {
-			min-height: 40vh;
-			.container-fluid {height: 40vh; position: relative;}
+		.brand {
+			img {
+				width: 45px;
+				height: 45px;
+
+			}
+		}
+		.menu {
+			ul {
+				padding: 0;
+				list-style: none;
+				li {
+					display: inline-block; 
+					padding-left: 2em;
+					font-weight: 700;
+					font-size: 14px;
+					a {
+						color: $dark;
+						text-decoration: none; 
+					}
+				}
+			}
 		}
 	}
 	.post-single {
