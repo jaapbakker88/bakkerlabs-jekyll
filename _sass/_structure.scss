@@ -9,7 +9,16 @@ html, body {
  	height: 100%; 
  }
 
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
 
+hr {
+	border: 0;
+	border-bottom: 1px solid darken($background, 3%);
+}
+	
 div.home {
 	padding: 1em;
 	#contact {
