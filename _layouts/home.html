@@ -17,8 +17,21 @@ layout: default
           <noscript>Good&lt;br&gt;day,</noscript>
         </h1>
           <!-- <h1>Hi, you've reached Bakker Labs. You're a little bit early, but that's okay.</h1> -->
-          <p>We're completely ready for you, just the website isn't yet. We're working really hard trying to find some spare hours here and there to finish it. In the meantime, please check out the latest post on our blog: {% for item in site.posts limit:1%}<a href="{{item.url}}">{{item.title}}</a>{% endfor %}&#8230;</p>
+          <p><span class="highlight">We're completely ready for you, just the website isn't yet.</span> We're working really hard trying to find some spare hours here and there to finish it. In the meantime, please check out the latest post on our blog: {% for item in site.posts limit:1%}<a href="{{item.url}}">{{item.title}}</a>{% endfor %}&#8230;</p>
+          <hr>
         </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="card-wrapper" style="-webkit-transform: rotateZ(-2deg); -webkit-backface-visibility:hidden; padding: 2px;">
+        <div class="card" style="width: 40em; margin: 4em auto; padding: 2em 2em 3em; background: #FAFAFF; text-align: center; box-shadow: 0px 0px 6px rgba(0,0,0,0.1);">
+          <h2 style="font-size: 3em;">Simply transforming your ideas into design</h2>
+          <p>We know your product is important to you, as are your ideas. That's why we work with you. From idea to product. This way <span class="highlight">the final product will always be your product.</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
         <div class="col-md-8 col-md-offset-2 col-xs-12">
           {% include contactform.html %}
         </div>
