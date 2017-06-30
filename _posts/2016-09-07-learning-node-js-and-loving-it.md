@@ -5,7 +5,7 @@ date:   2016-09-07 16:15:15 +0200
 categories: coding
 ---
 
-Some time ago I wrote [an article](http://jaap.ninja/learning-javascript-the-right-way/) about learning JavaScript, but the right way. Well, I have been doing that and at the same time I have been focussing on working on [Node.js](https://nodejs.org/). 
+Some time ago I wrote [an article](https://bakkerlabs.nl/blog/learning-javascript/) about learning JavaScript, but the right way. Well, I have been doing that and at the same time I have been focussing on working on [Node.js](https://nodejs.org/). 
 
 ![](https://s3.amazonaws.com/codementor_content/nodejs_logo_green.jpg)
 
