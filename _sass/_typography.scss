@@ -11,7 +11,20 @@ font-weight: 400;
 font-style: normal;
     }
 
+    @font-face{
+        font-family:"Bookman";
+        src:url("/assets/fonts/8dfcb502-5547-4d02-a713-0d4e8d8a9c92.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Bookman";
+        src:url("/assets/fonts/8dfcb502-5547-4d02-a713-0d4e8d8a9c92.eot?#iefix");
+        src:url("/assets/fonts/8dfcb502-5547-4d02-a713-0d4e8d8a9c92.eot?#iefix") format("eot"),url("/assets/fonts/8207a938-5f9f-4225-a478-358662c6477d.woff2") format("woff2"),url("/assets/fonts/efdd3eb9-9d96-466e-9784-137f31c4bcc3.woff") format("woff"),url("/assets/fonts/2a4d4eed-c28b-4f29-a1e7-9e307d0d4f3b.ttf") format("truetype"),url("/assets/fonts/34c7448d-bb1a-4b15-bf7f-b6ed1e0c33ef.svg#34c7448d-bb1a-4b15-bf7f-b6ed1e0c33ef") format("svg");
+font-weight: 400;
+font-style: italic;
+    }
+
 $brand-font:  'Bree', 'Helvetica', Arial, sans-serif;
+$quote-font: 'Bookman', Georgia, serif;
 
 html, body {
     font-family: system, -apple-system, BlinkMacSystemFont, '.SFNSDisplay-Regular', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -30,3 +43,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .highlight {background-color: #faf785;
     padding: 1px 2px;}
+.blog {
+    .bolano {
+        font-size: 42px;
+        font-family: $quote-font;
+        font-style: italic;
+        margin-bottom: 0px;
+    }
+    .author {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .author, .bolano {
+        margin-right: 0;
+        margin-left: auto;
+        text-align: right;
+        width: 100%;
+        opacity: 0.9;
+    }
+}
