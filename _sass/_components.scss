@@ -183,8 +183,12 @@ body.post {
 .alert {
 	border: 1px solid darken($background, 3%);
 	padding: 1em;
+	margin-bottom: 1em;
 	&.success {
 		color: green;
+	}
+	&.error {
+		color: red;
 	}
 }
 
