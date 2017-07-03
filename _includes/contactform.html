@@ -1,21 +1,33 @@
 <div id="contact">
-	<form id="contactform">
+	<form id="contactform" method="POST" action="http://formspree.io/hello@bakkerlabs.nl">
 			<label for="name">
 				<input type="text" name="name" placeholder="Name" required/>
 				<span>Name</span>
 			</label>
 
 			<label for="email">
-				<input type="email" name="email" placeholder="Email" required />
+				<input type="email" name="_replyto" placeholder="Email" required />
 				<span>Email</span>
 			</label>
+
+			<!-- <select name="service">
+				<option value="design">Design</option>
+				<option value="branding">Branding</option>
+				<option value="development">Development</option>
+				<option value="seo">SEO</option>
+			</select>
+			<select name="budget">
+				<option value="small">$2.000 - $5.000</option>
+				<option value="medium">$5.000 - $10.000</option>
+				<option value="big">$10.000 +</option>
+			</select> -->
 
 			<label for="htmlBody">
 				<textarea name="htmlBody" rows="7" placeholder="Message" required></textarea>
 				<span>Message</span>
 			</label>
-
-
+			<input type="hidden" name="_next" value="https://bakkerlabs.nl" />
+			<input type="hidden" name="_subject" value="New submission!" />
 			<button type="submit">Send</button>
 
 	</form>
