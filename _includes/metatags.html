@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | Bakker Labs</title>
+<title>{% if page.title %}{{ page.title }}{% else %}Internet Studio. Independent Design and Development{% endif %} | Bakker Labs</title>
 
 {% if page.description %}<meta name="description" content="{{ page.description }}" />{% else %}<meta name="description" content="{{ site.description }}" />{% endif %}
 {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}" />{% else %}<meta name="keywords" content="{{ site.keywords }}" />{% endif %}
@@ -11,4 +11,4 @@
 <meta name="twitter:site" content="@bakkerlabs">
 <meta name="twitter:title" content="{% if page.ogtitle %}{{ page.ogtitle }}{% elsif page.title %}{{ page.title }}{% else %}{{ 'Independent webdesign & development' }}{% endif %} | Bakker Labs">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{% if page.img %}{{ site.baseurl }}/posts/{{page.img}}{% else %}https://bakkerlabs.nl/assets/img/bl-logo.png{% endif %}" />
+<meta name="twitter:image" content="{% if page.img %}{{ site.baseurl }}/assets/img/posts/{{page.img}}{% else %}{{site.baseurl}}/assets/img/bl-logo.png{% endif %}" />
