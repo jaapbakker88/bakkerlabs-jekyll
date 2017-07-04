@@ -19,8 +19,8 @@
 		</div>
 		<div class="header-img row">
 			<div class="col-md-8 col-md-offset-2 col-xs-12">
-				{% if page.featured_img %}
-					<div class="cover-img" style="background-image: url(https://placehold.it/100x100)">
+				{% if page.img %}
+					<div class="cover-img" style="background-image: url('{{ site.baseurl }}/assets/img/posts/{{page.img}}')">
 						
 					</div>
 				{% endif%}

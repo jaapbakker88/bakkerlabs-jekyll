@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Design is never a predictable, linear process
+img: design-linear-predictable-process.png 
 ogtitle: Design is never a predictable, linear process
 description: Here’s some thoughts of two years designing for different companies and our design process while working for them
 keywords: Design, Process, front-end, design process, Bakker Labs
