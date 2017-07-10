@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  {% if page.path contains '_posts' %}
+	  <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
   
   {% if jekyll.environment == 'production' %}
   {% include heap.html %}

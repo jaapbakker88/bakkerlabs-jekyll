@@ -36,6 +36,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+ampdir: amp
+
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
